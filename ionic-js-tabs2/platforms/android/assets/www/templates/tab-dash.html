@@ -1,0 +1,44 @@
+<ion-view view-title="Dashboard">
+  <ion-content class="padding">
+    <h2>Quit Smoking </h2>
+      <h2 class="text-center" style="color:Highlight">My First App</h2>
+      <ion-list style="margin-top:12px">
+          <p>
+
+              <label class="item item-input">
+                  <span class="input-label">Name</span>
+                  <input type="text" id="name" ng-model="person.name" ng-required="Required">
+              </label>
+          </p>
+
+          <p>
+              <label class="item item-input">
+                  <span class="input-label">No. of Smoke</span>
+                  <input type="number" ng-model="person.smoke" id="smoke" ng-required="Required">
+              </label>
+          </p>
+          <p>
+              <label class="item item-input">
+                  <span class="input-label">Price per packet</span>
+                  <input type="number" id="price" ng-model="person.price" ng-required="Required">
+              </label>
+          </p>
+          <!--<p>
+              <label class="item item-input">
+                  <span class="input-label">Start </span>
+                  <input type="datetime-local" id="time" ng-model="person.date" ng-required="Required">
+              </label>
+
+          </p>-->
+          <p>
+              <button class="button button-positive" style="margin-left:82px" ng-click="setDetails(person)" ng-disabled=isValue>
+                  Submit
+              </button>
+
+              <button class="button button-positive" ng-click="resetDetails()">
+                  Clear
+              </button>
+
+          </p>
+</ion-content>
+</ion-view>

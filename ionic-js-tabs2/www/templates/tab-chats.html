@@ -1,0 +1,25 @@
+<ion-view view-title="Chats">
+  <ion-content>
+    <ion-list>
+        <h1 class="text-center" style="color:Highlight">My Details</h1>
+        <ion-list>
+            <label class="item item-input item-stacked-label">
+                <span class="input-label">Name</span>
+                <input type="text" placeholder="Name" value={{person1.name}} readonly>
+            </label>
+            <label class="item item-input item-stacked-label">
+                <span class="input-label">Last Smoke</span>
+                <input type="text" placeholder="Last Smoke" value={{person1.lastSmoke}} readonly>
+            </label>
+            <label class="item item-input item-stacked-label">
+                <span class="input-label">Time of Life Saved</span>
+                <input type="text" placeholder="Time of Life Saved" value={{person1.lifeSaved}}>
+            </label>
+            <label class="item item-input item-stacked-label">
+                <span class="input-label">Money Saved</span>
+                <input type="text" placeholder="Time of Life Saved" value={{person1.moneySaved}}>
+            </label>
+            <button class="button button-positive" ng-click="getDetails()">Get Information</button>
+</ion-list>
+  </ion-content>
+</ion-view>
